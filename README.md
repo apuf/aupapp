@@ -1,2 +1,2 @@
-# aupapp
-another useless php application
+# aupapp - another useless php application
+
