@@ -4,5 +4,5 @@
 1. протокол http
 2. язык разметки html
 3. язык разметки css
-4. язык программирования JavaScript(ECMAScript)
+4. язык программирования для броузера JavaScript(ECMAScript)
 5. один из серверных языков (PHP/Python/Java/javaScript(ECMAScript)/Go)
