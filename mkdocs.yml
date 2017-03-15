@@ -1,0 +1,8 @@
+docs_dir: book
+theme: material
+site_name: Еще одно бесполезное php приложение
+pages:
+  - index.md
+  - 'Оглавление': 'readme.md'
+  - level-0: 'level-0/readme.md'
+
