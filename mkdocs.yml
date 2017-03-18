@@ -1,8 +1,16 @@
 docs_dir: book
 theme: material
-site_name: Еще одно бесполезное php приложение
+site_name: AUPAP Еще одно бесполезное php приложение
+site_url: https://apuf.github.io/aupapp
+repo_url: https://github.com/apuf/aupapp
+edit_uri: edit/on-progress/book/
+site_description: Как научиться создавать сайты с нуля шаг за шагом
+site_author: Denis Kainazarov
+remote_branch: gh-pages
+remote_name: origin
 pages:
   - index.md
   - 'Оглавление': 'readme.md'
-  - level-0: 'level-0/readme.md'
-
+  - level-0:
+    - 'Оглавление': 'level-0/readme.md'
+    - 'Железо': 'level-0/hardware/readme.md'
