@@ -14,3 +14,7 @@ pages:
   - level-0:
     - 'Оглавление': 'level-0/readme.md'
     - 'Железо': 'level-0/hardware/readme.md'
+    - 'ОС (OS)': 'level-0/os/readme.md'
+    - 'Сети': 'level-0/network/readme.md'
+  - level-1:
+      - 'Оглавление': 'level-1/readme.md'

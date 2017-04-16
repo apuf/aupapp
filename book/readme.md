@@ -1,6 +1,7 @@
 ## Содержание
 
- *  [level-0](../level-0/readme)
+ *  [level-0](../level-0/readme) - то что нужно знать
+ *  [level-1](../level-1/readme) - начало работы с web
 
 ## Инструменты
 
