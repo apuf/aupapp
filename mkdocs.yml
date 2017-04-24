@@ -18,3 +18,5 @@ pages:
     - 'Сети': 'level-0/network/readme.md'
   - level-1:
       - 'Оглавление': 'level-1/readme.md'
+      - 'HTML':
+          - 'Оглавление': 'level-1/html/readme.md'
