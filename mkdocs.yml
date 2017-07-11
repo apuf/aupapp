@@ -20,3 +20,4 @@ pages:
       - 'Оглавление': 'level-1/readme.md'
       - 'HTML':
           - 'Оглавление': 'level-1/html/readme.md'
+          - 'Разметка текста': 'level-1/html/text.md'
