@@ -1,0 +1,845 @@
+
+<!DOCTYPE html>
+<html class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      
+        <meta name="description" content="Как научиться создавать сайты с нуля шаг за шагом">
+      
+      
+        <link rel="canonical" href="https://apuf.github.io/aupapp/level-0/hardware/readme/">
+      
+      
+        <meta name="author" content="Denis Kainazarov">
+      
+      
+        <link rel="shortcut icon" href="../../../assets/images/favicon.png">
+      
+      <meta name="generator" content="mkdocs-0.16.1, mkdocs-material-1.4.1">
+    
+    
+      
+        <title>Железо - AUPAP Еще одно бесполезное php приложение</title>
+      
+    
+    
+      <script src="../../../assets/javascripts/modernizr-56ade86843.js"></script>
+    
+    
+      <link rel="stylesheet" href="../../../assets/stylesheets/application-76741b64bc.css">
+      
+    
+    
+      
+        
+        
+        
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,400,400i,700|Roboto+Mono">
+        <style>body,input{font-family:"Roboto","Helvetica Neue",Helvetica,Arial,sans-serif}code,kbd,pre{font-family:"Roboto Mono","Courier New",Courier,monospace}</style>
+      
+      <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+    
+    
+    
+  </head>
+  
+  
+  
+  
+    <body>
+  
+    <svg class="md-svg">
+      <defs>
+        
+        
+          <svg xmlns="http://www.w3.org/2000/svg" width="416" height="448" viewBox="0 0 416 448" id="github"><path fill="currentColor" d="M160 304q0 10-3.125 20.5t-10.75 19T128 352t-18.125-8.5-10.75-19T96 304t3.125-20.5 10.75-19T128 256t18.125 8.5 10.75 19T160 304zm160 0q0 10-3.125 20.5t-10.75 19T288 352t-18.125-8.5-10.75-19T256 304t3.125-20.5 10.75-19T288 256t18.125 8.5 10.75 19T320 304zm40 0q0-30-17.25-51T296 232q-10.25 0-48.75 5.25Q229.5 240 208 240t-39.25-2.75Q130.75 232 120 232q-29.5 0-46.75 21T56 304q0 22 8 38.375t20.25 25.75 30.5 15 35 7.375 37.25 1.75h42q20.5 0 37.25-1.75t35-7.375 30.5-15 20.25-25.75T360 304zm56-44q0 51.75-15.25 82.75-9.5 19.25-26.375 33.25t-35.25 21.5-42.5 11.875-42.875 5.5T212 416q-19.5 0-35.5-.75t-36.875-3.125-38.125-7.5-34.25-12.875T37 371.5t-21.5-28.75Q0 312 0 260q0-59.25 34-99-6.75-20.5-6.75-42.5 0-29 12.75-54.5 27 0 47.5 9.875t47.25 30.875Q171.5 96 212 96q37 0 70 8 26.25-20.5 46.75-30.25T376 64q12.75 25.5 12.75 54.5 0 21.75-6.75 42 34 40 34 99.5z"/></svg>
+        
+      </defs>
+    </svg>
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="drawer">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="search">
+    <label class="md-overlay" data-md-component="overlay" for="drawer"></label>
+    
+      <header class="md-header" data-md-component="header">
+  <nav class="md-header-nav md-grid">
+    <div class="md-flex">
+      <div class="md-flex__cell md-flex__cell--shrink">
+        
+          <a href="../../.." title="AUPAP Еще одно бесполезное php приложение" class="md-icon md-icon--home md-header-nav__button">
+          </a>
+        
+      </div>
+      <div class="md-flex__cell md-flex__cell--shrink">
+        <label class="md-icon md-icon--menu md-header-nav__button" for="drawer"></label>
+      </div>
+      <div class="md-flex__cell md-flex__cell--stretch">
+        <span class="md-flex__ellipsis md-header-nav__title">
+          
+            
+              
+                <span class="md-header-nav__parent">
+                  level-0
+                </span>
+              
+            
+            Железо
+          
+        </span>
+      </div>
+      <div class="md-flex__cell md-flex__cell--shrink">
+        
+          <label class="md-icon md-icon--search md-header-nav__button" for="search"></label>
+          
+<div class="md-search" data-md-component="search">
+  <div class="md-search__overlay"></div>
+  <div class="md-search__inner">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" name="query" placeholder="Search" accesskey="s" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="query">
+      <label class="md-icon md-search__icon" for="search"></label>
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="result">
+          <div class="md-search-result__meta" data-md-lang-result-none="No matching documents" data-md-lang-result-one="1 matching document" data-md-lang-result-other="# matching documents">
+            Type to start searching
+          </div>
+          <ol class="md-search-result__list"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+        
+      </div>
+      <div class="md-flex__cell md-flex__cell--shrink">
+        <div class="md-header-nav__source">
+          
+            
+
+
+  
+
+
+  <a href="https://github.com/apuf/aupapp" title="Go to repository" class="md-source" data-md-source="github">
+    
+      <div class="md-source__icon">
+        <svg viewBox="0 0 24 24" width="24" height="24">
+          <use xlink:href="#github" width="24" height="24"></use>
+        </svg>
+      </div>
+    
+    <div class="md-source__repository">
+      GitHub
+    </div>
+  </a>
+
+          
+        </div>
+      </div>
+    </div>
+  </nav>
+</header>
+    
+    <div class="md-container">
+      
+      
+      <main class="md-main">
+        <div class="md-main__inner md-grid" data-md-component="container">
+          
+            
+              <div class="md-sidebar md-sidebar--primary" data-md-component="navigation">
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    <nav class="md-nav md-nav--primary" data-md-level="0">
+  <label class="md-nav__title md-nav__title--site" for="drawer">
+    
+      <i class="md-icon md-icon--home md-nav__button"></i>
+    
+    AUPAP Еще одно бесполезное php приложение
+  </label>
+  
+    <div class="md-nav__source">
+      
+
+
+  
+
+
+  <a href="https://github.com/apuf/aupapp" title="Go to repository" class="md-source" data-md-source="github">
+    
+      <div class="md-source__icon">
+        <svg viewBox="0 0 24 24" width="24" height="24">
+          <use xlink:href="#github" width="24" height="24"></use>
+        </svg>
+      </div>
+    
+    <div class="md-source__repository">
+      GitHub
+    </div>
+  </a>
+
+    </div>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+      
+
+
+  <li class="md-nav__item">
+    <a href="../../.." title="Home" class="md-nav__link">
+      Home
+    </a>
+  </li>
+
+    
+      
+      
+      
+
+
+  <li class="md-nav__item">
+    <a href="../../../readme/" title="Оглавление" class="md-nav__link">
+      Оглавление
+    </a>
+  </li>
+
+    
+      
+      
+      
+
+  
+
+
+  <li class="md-nav__item md-nav__item--active md-nav__item--nested">
+    
+      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-3" type="checkbox" id="nav-3" checked>
+    
+    <label class="md-nav__link" for="nav-3">
+      level-0
+    </label>
+    <nav class="md-nav" data-md-component="collapsible" data-md-level="1">
+      <label class="md-nav__title" for="nav-3">
+        level-0
+      </label>
+      <ul class="md-nav__list" data-md-scrollfix>
+        
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../readme/" title="Оглавление" class="md-nav__link">
+      Оглавление
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+  
+
+
+  <li class="md-nav__item md-nav__item--active">
+    
+    <input class="md-toggle md-nav__toggle" data-md-toggle="toc" type="checkbox" id="toc">
+    
+    
+      <label class="md-nav__link md-nav__link--active" for="toc">
+        Железо
+      </label>
+    
+    <a href="./" title="Железо" class="md-nav__link md-nav__link--active">
+      Железо
+    </a>
+    
+      
+<nav class="md-nav md-nav--secondary">
+  
+  
+  
+    <label class="md-nav__title" for="toc">Table of contents</label>
+    <ul class="md-nav__list" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#hardware" title="Электронные вычислительные устройства (hardware)" class="md-nav__link">
+    Электронные вычислительные устройства (hardware)
+  </a>
+  
+    <nav class="md-nav">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#o" title="Oсновные компоненты компьютеров" class="md-nav__link">
+    Oсновные компоненты компьютеров
+  </a>
+  
+    <nav class="md-nav">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#cpu" title="CPU" class="md-nav__link">
+    CPU
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_1" title="Память" class="md-nav__link">
+    Память
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#ram" title="RAM" class="md-nav__link">
+    RAM
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_2" title="Видео" class="md-nav__link">
+    Видео
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_3" title="Материнские платы" class="md-nav__link">
+    Материнские платы
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#bios-uefi" title="BIOS / UEFI" class="md-nav__link">
+    BIOS / UEFI
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_4" title="Итоги" class="md-nav__link">
+    Итоги
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_5" title="Интересные моменты" class="md-nav__link">
+    Интересные моменты
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+      
+      
+    </ul>
+  
+</nav>
+    
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../os/readme/" title="ОС (OS)" class="md-nav__link">
+      ОС (OS)
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../network/readme/" title="Сети" class="md-nav__link">
+      Сети
+    </a>
+  </li>
+
+        
+      </ul>
+    </nav>
+  </li>
+
+    
+      
+      
+      
+
+
+  <li class="md-nav__item md-nav__item--nested">
+    
+      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-4" type="checkbox" id="nav-4">
+    
+    <label class="md-nav__link" for="nav-4">
+      level-1
+    </label>
+    <nav class="md-nav" data-md-component="collapsible" data-md-level="1">
+      <label class="md-nav__title" for="nav-4">
+        level-1
+      </label>
+      <ul class="md-nav__list" data-md-scrollfix>
+        
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../../level-1/readme/" title="Оглавление" class="md-nav__link">
+      Оглавление
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item md-nav__item--nested">
+    
+      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-4-2" type="checkbox" id="nav-4-2">
+    
+    <label class="md-nav__link" for="nav-4-2">
+      HTML
+    </label>
+    <nav class="md-nav" data-md-component="collapsible" data-md-level="2">
+      <label class="md-nav__title" for="nav-4-2">
+        HTML
+      </label>
+      <ul class="md-nav__list" data-md-scrollfix>
+        
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../../level-1/html/readme/" title="Оглавление" class="md-nav__link">
+      Оглавление
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../../level-1/html/text/" title="Разметка текста" class="md-nav__link">
+      Разметка текста
+    </a>
+  </li>
+
+        
+      </ul>
+    </nav>
+  </li>
+
+        
+      </ul>
+    </nav>
+  </li>
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="toc">
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+<nav class="md-nav md-nav--secondary">
+  
+  
+  
+    <label class="md-nav__title" for="toc">Table of contents</label>
+    <ul class="md-nav__list" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#hardware" title="Электронные вычислительные устройства (hardware)" class="md-nav__link">
+    Электронные вычислительные устройства (hardware)
+  </a>
+  
+    <nav class="md-nav">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#o" title="Oсновные компоненты компьютеров" class="md-nav__link">
+    Oсновные компоненты компьютеров
+  </a>
+  
+    <nav class="md-nav">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#cpu" title="CPU" class="md-nav__link">
+    CPU
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_1" title="Память" class="md-nav__link">
+    Память
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#ram" title="RAM" class="md-nav__link">
+    RAM
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_2" title="Видео" class="md-nav__link">
+    Видео
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_3" title="Материнские платы" class="md-nav__link">
+    Материнские платы
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#bios-uefi" title="BIOS / UEFI" class="md-nav__link">
+    BIOS / UEFI
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_4" title="Итоги" class="md-nav__link">
+    Итоги
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_5" title="Интересные моменты" class="md-nav__link">
+    Интересные моменты
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+      
+      
+    </ul>
+  
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+          
+          <div class="md-content">
+            <article class="md-content__inner md-typeset">
+              
+                
+                  <a href="https://github.com/apuf/aupapp/edit/on-progress/book/level-0/hardware/readme.md" title="Edit this page" class="md-icon md-content__icon">edit</a>
+                
+                
+                  <h1>Железо</h1>
+                
+                <h2 id="hardware">Электронные вычислительные устройства (hardware)</h2>
+<p>Этот раздел не претендует на экспертную литературу - просто основные моменты</p>
+<p>Все современные электронные устройства - это довольно сложные системы созданные
+из базовых электронных компонентов. Если вам интересна данная область то можете 
+начать с любительской электроники и разобраться в ней поглубже.</p>
+<p><img alt="Electronic components" src="../../../level-0/hardware/img/electronic_components.jpg" /></p>
+<p>Вычислительные устройства состоят из кристалла кремния, кристалл 
+создан искусственно слой за слоем, при особом воздействии на слой кремния
+возможно преобразовать отдельные атомы слоя в полупроводники из которых создают
+диоды и транзисторы а в свою очередь из них строят более сложные структуры, такие
+как триггеры, логические элементы, счетчики и другие элементы. После слои совмещают
+и получают кристалл кремния - интегральную микросхему.</p>
+<p>Процессы, сами элементы и способы их производства - это коммерческие секреты
+и для того чтобы узнать детали нужно быть гением в фирме, которая создает эти схемы.</p>
+<p>Основные элементы правда известны:</p>
+<ul>
+<li>Триггер - это такой элемент который имеет два состояния - включено и выключено
+что позволяет хранить одно бинарное число - bit (binary digit) - единица или ноль.</li>
+<li>Инвертор - меняет значение бита (1 стала 0 или наоборот)</li>
+<li>Регистр - хранит в себе несколько битов информации и состоит из триггеров</li>
+<li>Сумматор - суммирует значение из нескольких битов</li>
+</ul>
+<p>Так что любой современный компьютер / смартфон / сервер / чип
+умеет только получать электрические сигналы, преобразовывать их в 
+биты и суммировать их.</p>
+<blockquote>
+<p>На основе суммы создаются операции вычитания, умножения и даже деления. Здесь у нас
+есть и первая проблема всех электронных устройств - мы можем мгновенно вычитать, складывать и умножать
+а вот деление нам доступно только нацело. Периодические числа вроде 1/3 нам доступны
+только до определенной точности, однако в большинстве случаев её хватает.</p>
+</blockquote>
+<p>В итоге в одном кристалле мы имеем возможность сохранять биты, перемещать их и
+выполнять операции над ними.</p>
+<p>Так работают каркуляторы и некоторые чипы.</p>
+<p>Для более сложных и интересных вещей используются модульные системы из нескольких
+устройств - это наши компьютеры / телефоны / умные часы / умные телевизоры и прочая утварь.</p>
+<h3 id="o">Oсновные компоненты компьютеров</h3>
+<blockquote>
+<p>compute - вычислять, computer - вычислитель</p>
+</blockquote>
+<p>Компьютер состоит как минимум из 4-х основных компонентов</p>
+<ul>
+<li>CPU или процессор</li>
+<li>RAM или оперативная память</li>
+<li>Стример/HDD/SSH или другая холодная память</li>
+</ul>
+<h4 id="cpu">CPU</h4>
+<p>Первый элемент это процессор - устройство которое принимает биты информации
+и команды для работы с ними и возвращает результаты.</p>
+<p><img alt="CPU" src="../../../level-0/hardware/img/cpu.jpg" /></p>
+<p>Для понимания всего процесса создания компьютеров вернемся к истории.</p>
+<p>Есть два вида архитектуры процессора - первая это фон-неймоновская
+где данные и команды передаются по одной шине, и гарвардская где есть
+две шины - одна для данных и вторая для команд.</p>
+<p>В первом случае мы можем ввести данные и команды вместе, во втором 
+нам нужно синхронизировать команды и данные что не просто.
+Сейчас наибольшая часть устройств построены на фон-неймоновской архитектуре
+где данные и команды идут в одном потоке.</p>
+<p>Для того чтобы различать данные и команды для процессора создают систему
+команд. Так как процессор принимает только двоичную информацию - то
+некоторые данные представляют собой команды. </p>
+<p>Для получения и обработки данных нам нужно получить поток данных и команд
+из какого-либо источника. Изначально команды и данные вводили напрямую 
+из устройств чтения вроде перфокарт или клавиатуры и получали готовый
+результат. Но это достаточно не удобно - каждый раз для работы с компьютером
+приходилось набирать одни и те-же команды для работе - причем в виде
+единиц и нулей.</p>
+<blockquote>
+<p>Программа это набор команд - кэп</p>
+</blockquote>
+<h4 id="_1">Память</h4>
+<p>Чтобы не вводить каждый раз одни и те-же команды инженеры создали
+устройства ввода и хранения на магнитных лентах. Теперь данные вместе
+с программами стало возможно хранить и использовать повторно.</p>
+<p>Однако и тут у нас возникли проблемы 
+<em> данные и команды идут в одном наборе и для расчета по одной и той-же
+программе но с другими данными необходимо было переписывать ленту
+</em> скорость работы ленты достаточно медленная</p>
+<p><img alt="streamer" src="../../../level-0/hardware/img/streamer.jpg" /></p>
+<h4 id="ram">RAM</h4>
+<p>Для решения этих проблем была создана RAM (Random access memory)
+в которую процессор помещал данные и мог обращаться к любой части
+данных почти мгновенно. Это позволило сначала получить программу 
+потом подождать ввода данных и после продолжить работу имея все 
+данные под рукой.</p>
+<p><img alt="RAM" src="../../../level-0/hardware/img/ram.png" /></p>
+<p>RAM очень быстрая но энергозависимая, если нет электричества она
+не сохраняет в себе данные и даже если бы и могла - смысла в этом
+не много так как данные всегда разные.</p>
+<p>В итоге у нас есть:</p>
+<ul>
+<li>горячая память с возможность обратиться к любой
+части программы или данных. </li>
+<li>холодная память для хранения программ и данных. </li>
+<li>устройства ввода для ввода данных</li>
+<li>процессор для их выполнения программ которые данные обрабатывают</li>
+</ul>
+<p>RAM в принципе не изменилась до сих пор - есть разные поколения памяти
+но задача одна и та-же.</p>
+<p>Холодная память тоже прогрессирует. У нас были и есть магнитные ленты,
+да в 2017 году вы можете купить ленточный носитель и хранить данные
+на лентах (очень много медленных данных) - удивительно правда?</p>
+<p>Далее у нас есть магнитные диски HDD - которые до сих пор используются
+в некоторых дешевых ноутбуках или компьютерах. </p>
+<blockquote>
+<p>SSD - по содержанию похожи RAM но не зависят от энергии и куда медленнее.</p>
+</blockquote>
+<p><img alt="hdd" src="../../../level-0/hardware/img/hdd.jpg" /></p>
+<p>Далее для работы с графикой используются специальные устройства -
+графические процессоры (видеокарты). В процессорах для компьютера
+тоже есть графические сопроцессоры, но они медленнее и работают с 
+графикой куда хуже. Сайты вы еще почитаете, а вот в игры вам не доступны.</p>
+<h4 id="_2">Видео</h4>
+<p>Первые компьютеры имели консольный интерфейс где человек вводил команду и ждал её выполнения и получал ответ.
+Консоль сохранилась и до сих пор, например для работы на серверах, системного администрирования,
+да даже для того чтобы сделать эту книгу я использую консоль.</p>
+<p>Консольные мониторы адаптированы для текста, они не имели цветов и подключались к первым графическим картам.
+Графическая карта необходима для вывода данных на экран. </p>
+<p>Большинство современных компьютеров имеют встроенную графическую карту, которая работает с помощью процессора
+для чтения книг, работы с офисными пакетами этого почти достаточно, но если мы хотим работать с графикой, 3d или играми
+то нам нужно купить отдельную видеокарту.</p>
+<p><img alt="Video" src="../../../level-0/hardware/img/videocard.jpg" /></p>
+<p>Видеокарта это почти отдельный компьютер со своим процессором, памятью и платой заточенный для работы с видео.
+Помимо видео некоторые операции эффективно просчитывать на видео картах, так что её наличие это огромный плюс. </p>
+<h4 id="_3">Материнские платы</h4>
+<p>Для объединения всех этих базовых модулей используются текстолитовые платы.
+В ноутбуках и персональных компьютерах эти платы (материнские платы) 
+позволяют в какой-то мере менять компоненты, в телефонах пытаются
+сделать заменяемые модули (чтобы слабую дешевую камеру заменит на 
+более производительную и дорогую или заменить разбитый экран 
+не обращаясь в ремонт) но пока без особых успехов.</p>
+<h3 id="bios-uefi">BIOS / UEFI</h3>
+<blockquote>
+<p>BIOS - Basic Input Output System
+Базовая система ввода вывода</p>
+<p>UEFI - Unified Extensible Firmware Interface
+Универсальный расширяемый интерфейс прошивки</p>
+</blockquote>
+<p>Для того чтобы включить и подготовить все устройства компьютера
+необходим небольшой набор программ от разработчиков самой
+платы и устройств.</p>
+<p>Как только компьютер включается он проводит загружает из 
+специального чипа на плате систему BIOS или UEFI.</p>
+<p>Система проводит проверку оборудования и если есть неполадки, то
+компьютер не запустится и попытается донести до пользователя в
+чем проблема. Например если отсутствует процессор или память.</p>
+<p>После того как проверка успешно прошла - базовая система загружает
+настройки работы аппаратуры и начинает поиск загрузчика согласно настройкам.
+На этом этапе можно зайти в BIOS/UEFI и настроить его. </p>
+<p>В BIOS/UEFI можно указать с какого устройства мы будем запускать
+программы, настройки аппаратуры (например разогнать процессор на свой
+страх и риск), включить виртуализацию на уровне процессора или 
+провести дополнительную диагностику.</p>
+<p>Как только загрузка BIOS/UEFI закончена они передают управление
+загрузчику - который и указывает какую программу загрузить.</p>
+<h3 id="_4">Итоги</h3>
+<ul>
+<li>Все вычислительные устройства на кремнии оперируют битами (binary digit) (единица или ноль)</li>
+<li>Вычислительные устройства на кремнии содержат 3 компонента <ul>
+<li>устройство ввода или хранения данных</li>
+<li>процессор или интегральную схему</li>
+<li>оперативную память (хотя-бы на уровне кэша процессора)</li>
+</ul>
+</li>
+<li>В компьютерах существует базовая система настройки и диагностики</li>
+</ul>
+<h3 id="_5">Интересные моменты</h3>
+<blockquote>
+<p>Существуют вычислительные устройства не на кремнии и с другими архитектурами
+например биокомпьютеры</p>
+<p>В 2017 году все еще используются ленты</p>
+<p>Через BIOS или UEFI можно включить компьютер через интернет</p>
+</blockquote>
+                
+                  
+                
+              
+              
+                
+              
+            </article>
+          </div>
+        </div>
+      </main>
+      
+        
+<footer class="md-footer">
+  
+    <div class="md-footer-nav">
+      <nav class="md-footer-nav__inner md-grid">
+        
+          <a href="../../readme/" title="Оглавление" class="md-flex md-footer-nav__link md-footer-nav__link--prev" rel="prev">
+            <div class="md-flex__cell md-flex__cell--shrink">
+              <i class="md-icon md-icon--arrow-back md-footer-nav__button"></i>
+            </div>
+            <div class="md-flex__cell md-flex__cell--stretch md-footer-nav__title">
+              <span class="md-flex__ellipsis">
+                <span class="md-footer-nav__direction">
+                  Previous
+                </span>
+                Оглавление
+              </span>
+            </div>
+          </a>
+        
+        
+          <a href="../../os/readme/" title="ОС (OS)" class="md-flex md-footer-nav__link md-footer-nav__link--next" rel="next">
+            <div class="md-flex__cell md-flex__cell--stretch md-footer-nav__title">
+              <span class="md-flex__ellipsis">
+                <span class="md-footer-nav__direction">
+                  Next
+                </span>
+                ОС (OS)
+              </span>
+            </div>
+            <div class="md-flex__cell md-flex__cell--shrink">
+              <i class="md-icon md-icon--arrow-forward md-footer-nav__button"></i>
+            </div>
+          </a>
+        
+      </nav>
+    </div>
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-footer-copyright">
+        
+        powered by
+        <a href="http://www.mkdocs.org" title="MkDocs">MkDocs</a>
+        and
+        <a href="http://squidfunk.github.io/mkdocs-material/" title="Material for MkDocs">
+          Material for MkDocs</a>
+      </div>
+      
+        
+      
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    
+      <script src="../../../assets/javascripts/application-3964c0cb56.js"></script>
+      <script>app.initialize({url:{base:"../../.."}})</script>
+      
+    
+    
+      
+    
+  </body>
+</html>

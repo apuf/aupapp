@@ -1,0 +1,710 @@
+
+<!DOCTYPE html>
+<html class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      
+        <meta name="description" content="Как научиться создавать сайты с нуля шаг за шагом">
+      
+      
+        <link rel="canonical" href="https://apuf.github.io/aupapp/level-0/os/readme/">
+      
+      
+        <meta name="author" content="Denis Kainazarov">
+      
+      
+        <link rel="shortcut icon" href="../../../assets/images/favicon.png">
+      
+      <meta name="generator" content="mkdocs-0.16.1, mkdocs-material-1.4.1">
+    
+    
+      
+        <title>ОС (OS) - AUPAP Еще одно бесполезное php приложение</title>
+      
+    
+    
+      <script src="../../../assets/javascripts/modernizr-56ade86843.js"></script>
+    
+    
+      <link rel="stylesheet" href="../../../assets/stylesheets/application-76741b64bc.css">
+      
+    
+    
+      
+        
+        
+        
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,400,400i,700|Roboto+Mono">
+        <style>body,input{font-family:"Roboto","Helvetica Neue",Helvetica,Arial,sans-serif}code,kbd,pre{font-family:"Roboto Mono","Courier New",Courier,monospace}</style>
+      
+      <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+    
+    
+    
+  </head>
+  
+  
+  
+  
+    <body>
+  
+    <svg class="md-svg">
+      <defs>
+        
+        
+          <svg xmlns="http://www.w3.org/2000/svg" width="416" height="448" viewBox="0 0 416 448" id="github"><path fill="currentColor" d="M160 304q0 10-3.125 20.5t-10.75 19T128 352t-18.125-8.5-10.75-19T96 304t3.125-20.5 10.75-19T128 256t18.125 8.5 10.75 19T160 304zm160 0q0 10-3.125 20.5t-10.75 19T288 352t-18.125-8.5-10.75-19T256 304t3.125-20.5 10.75-19T288 256t18.125 8.5 10.75 19T320 304zm40 0q0-30-17.25-51T296 232q-10.25 0-48.75 5.25Q229.5 240 208 240t-39.25-2.75Q130.75 232 120 232q-29.5 0-46.75 21T56 304q0 22 8 38.375t20.25 25.75 30.5 15 35 7.375 37.25 1.75h42q20.5 0 37.25-1.75t35-7.375 30.5-15 20.25-25.75T360 304zm56-44q0 51.75-15.25 82.75-9.5 19.25-26.375 33.25t-35.25 21.5-42.5 11.875-42.875 5.5T212 416q-19.5 0-35.5-.75t-36.875-3.125-38.125-7.5-34.25-12.875T37 371.5t-21.5-28.75Q0 312 0 260q0-59.25 34-99-6.75-20.5-6.75-42.5 0-29 12.75-54.5 27 0 47.5 9.875t47.25 30.875Q171.5 96 212 96q37 0 70 8 26.25-20.5 46.75-30.25T376 64q12.75 25.5 12.75 54.5 0 21.75-6.75 42 34 40 34 99.5z"/></svg>
+        
+      </defs>
+    </svg>
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="drawer">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="search">
+    <label class="md-overlay" data-md-component="overlay" for="drawer"></label>
+    
+      <header class="md-header" data-md-component="header">
+  <nav class="md-header-nav md-grid">
+    <div class="md-flex">
+      <div class="md-flex__cell md-flex__cell--shrink">
+        
+          <a href="../../.." title="AUPAP Еще одно бесполезное php приложение" class="md-icon md-icon--home md-header-nav__button">
+          </a>
+        
+      </div>
+      <div class="md-flex__cell md-flex__cell--shrink">
+        <label class="md-icon md-icon--menu md-header-nav__button" for="drawer"></label>
+      </div>
+      <div class="md-flex__cell md-flex__cell--stretch">
+        <span class="md-flex__ellipsis md-header-nav__title">
+          
+            
+              
+                <span class="md-header-nav__parent">
+                  level-0
+                </span>
+              
+            
+            ОС (OS)
+          
+        </span>
+      </div>
+      <div class="md-flex__cell md-flex__cell--shrink">
+        
+          <label class="md-icon md-icon--search md-header-nav__button" for="search"></label>
+          
+<div class="md-search" data-md-component="search">
+  <div class="md-search__overlay"></div>
+  <div class="md-search__inner">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" name="query" placeholder="Search" accesskey="s" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="query">
+      <label class="md-icon md-search__icon" for="search"></label>
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="result">
+          <div class="md-search-result__meta" data-md-lang-result-none="No matching documents" data-md-lang-result-one="1 matching document" data-md-lang-result-other="# matching documents">
+            Type to start searching
+          </div>
+          <ol class="md-search-result__list"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+        
+      </div>
+      <div class="md-flex__cell md-flex__cell--shrink">
+        <div class="md-header-nav__source">
+          
+            
+
+
+  
+
+
+  <a href="https://github.com/apuf/aupapp" title="Go to repository" class="md-source" data-md-source="github">
+    
+      <div class="md-source__icon">
+        <svg viewBox="0 0 24 24" width="24" height="24">
+          <use xlink:href="#github" width="24" height="24"></use>
+        </svg>
+      </div>
+    
+    <div class="md-source__repository">
+      GitHub
+    </div>
+  </a>
+
+          
+        </div>
+      </div>
+    </div>
+  </nav>
+</header>
+    
+    <div class="md-container">
+      
+      
+      <main class="md-main">
+        <div class="md-main__inner md-grid" data-md-component="container">
+          
+            
+              <div class="md-sidebar md-sidebar--primary" data-md-component="navigation">
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    <nav class="md-nav md-nav--primary" data-md-level="0">
+  <label class="md-nav__title md-nav__title--site" for="drawer">
+    
+      <i class="md-icon md-icon--home md-nav__button"></i>
+    
+    AUPAP Еще одно бесполезное php приложение
+  </label>
+  
+    <div class="md-nav__source">
+      
+
+
+  
+
+
+  <a href="https://github.com/apuf/aupapp" title="Go to repository" class="md-source" data-md-source="github">
+    
+      <div class="md-source__icon">
+        <svg viewBox="0 0 24 24" width="24" height="24">
+          <use xlink:href="#github" width="24" height="24"></use>
+        </svg>
+      </div>
+    
+    <div class="md-source__repository">
+      GitHub
+    </div>
+  </a>
+
+    </div>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+      
+
+
+  <li class="md-nav__item">
+    <a href="../../.." title="Home" class="md-nav__link">
+      Home
+    </a>
+  </li>
+
+    
+      
+      
+      
+
+
+  <li class="md-nav__item">
+    <a href="../../../readme/" title="Оглавление" class="md-nav__link">
+      Оглавление
+    </a>
+  </li>
+
+    
+      
+      
+      
+
+  
+
+
+  <li class="md-nav__item md-nav__item--active md-nav__item--nested">
+    
+      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-3" type="checkbox" id="nav-3" checked>
+    
+    <label class="md-nav__link" for="nav-3">
+      level-0
+    </label>
+    <nav class="md-nav" data-md-component="collapsible" data-md-level="1">
+      <label class="md-nav__title" for="nav-3">
+        level-0
+      </label>
+      <ul class="md-nav__list" data-md-scrollfix>
+        
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../readme/" title="Оглавление" class="md-nav__link">
+      Оглавление
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../hardware/readme/" title="Железо" class="md-nav__link">
+      Железо
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+  
+
+
+  <li class="md-nav__item md-nav__item--active">
+    
+    <input class="md-toggle md-nav__toggle" data-md-toggle="toc" type="checkbox" id="toc">
+    
+    
+      <label class="md-nav__link md-nav__link--active" for="toc">
+        ОС (OS)
+      </label>
+    
+    <a href="./" title="ОС (OS)" class="md-nav__link md-nav__link--active">
+      ОС (OS)
+    </a>
+    
+      
+<nav class="md-nav md-nav--secondary">
+  
+  
+  
+    <label class="md-nav__title" for="toc">Table of contents</label>
+    <ul class="md-nav__list" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#_1" title="Операционные системы" class="md-nav__link">
+    Операционные системы
+  </a>
+  
+    <nav class="md-nav">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#_2" title="История" class="md-nav__link">
+    История
+  </a>
+  
+    <nav class="md-nav">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#_3" title="Персональный компьютер" class="md-nav__link">
+    Персональный компьютер
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#windows-microsoft" title="Windows и Microsoft" class="md-nav__link">
+    Windows и Microsoft
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#apple" title="Apple" class="md-nav__link">
+    Apple
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#nix" title="*.nix" class="md-nav__link">
+    *.nix
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+      
+      
+    </ul>
+  
+</nav>
+    
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../network/readme/" title="Сети" class="md-nav__link">
+      Сети
+    </a>
+  </li>
+
+        
+      </ul>
+    </nav>
+  </li>
+
+    
+      
+      
+      
+
+
+  <li class="md-nav__item md-nav__item--nested">
+    
+      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-4" type="checkbox" id="nav-4">
+    
+    <label class="md-nav__link" for="nav-4">
+      level-1
+    </label>
+    <nav class="md-nav" data-md-component="collapsible" data-md-level="1">
+      <label class="md-nav__title" for="nav-4">
+        level-1
+      </label>
+      <ul class="md-nav__list" data-md-scrollfix>
+        
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../../level-1/readme/" title="Оглавление" class="md-nav__link">
+      Оглавление
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item md-nav__item--nested">
+    
+      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-4-2" type="checkbox" id="nav-4-2">
+    
+    <label class="md-nav__link" for="nav-4-2">
+      HTML
+    </label>
+    <nav class="md-nav" data-md-component="collapsible" data-md-level="2">
+      <label class="md-nav__title" for="nav-4-2">
+        HTML
+      </label>
+      <ul class="md-nav__list" data-md-scrollfix>
+        
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../../level-1/html/readme/" title="Оглавление" class="md-nav__link">
+      Оглавление
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../../level-1/html/text/" title="Разметка текста" class="md-nav__link">
+      Разметка текста
+    </a>
+  </li>
+
+        
+      </ul>
+    </nav>
+  </li>
+
+        
+      </ul>
+    </nav>
+  </li>
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="toc">
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+<nav class="md-nav md-nav--secondary">
+  
+  
+  
+    <label class="md-nav__title" for="toc">Table of contents</label>
+    <ul class="md-nav__list" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#_1" title="Операционные системы" class="md-nav__link">
+    Операционные системы
+  </a>
+  
+    <nav class="md-nav">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#_2" title="История" class="md-nav__link">
+    История
+  </a>
+  
+    <nav class="md-nav">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#_3" title="Персональный компьютер" class="md-nav__link">
+    Персональный компьютер
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#windows-microsoft" title="Windows и Microsoft" class="md-nav__link">
+    Windows и Microsoft
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#apple" title="Apple" class="md-nav__link">
+    Apple
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#nix" title="*.nix" class="md-nav__link">
+    *.nix
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+      
+      
+    </ul>
+  
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+          
+          <div class="md-content">
+            <article class="md-content__inner md-typeset">
+              
+                
+                  <a href="https://github.com/apuf/aupapp/edit/on-progress/book/level-0/os/readme.md" title="Edit this page" class="md-icon md-content__icon">edit</a>
+                
+                
+                  <h1>ОС (OS)</h1>
+                
+                <h2 id="_1">Операционные системы</h2>
+<p>Как мы знаем большинство копьютеров после включения проверяют систему
+с помошью внутренних загрузчиков и далее пытаются загрузить первую программу
+обычно это и есть операционная система.</p>
+<p>Операционная система это программа которая отвечает за управление компьютером
+и облегчает работу пользователя с ним.</p>
+<p>Да можно самому давать команды памяти, процессору и другим устройствам, но если вы не
+знаете как это делать (как и я) то операционная система это ваш выбор.</p>
+<p>Операционная система состоит из нескольких частей это ядро, файловая система и
+среда выполнения. </p>
+<p>При работе с ней вы оперируете не набором команд процессора, а вполне доступными 
+понятиями вроде файла, папки, программы, диска, пользователя и тд.</p>
+<p>Иными словами операционная система это прослойка которая представляет вам возможность
+для удобной работой с компьютером.</p>
+<h3 id="_2">История</h3>
+<p>Изначально программы выполнялись напрямую в компьютере, вы включали компьютер он загружал программу выдавал результат
+и можно было его смело выключать, а если мы хотим запустить несколько программ?
+Значит нам нужна программа которая запускает другие программы. Так и появились первые операционные системы.
+Программы были расположены на дисках, вы подключали диск к компьютеру, и операционная система 
+позволяла запустить какую либо программу с этого диска. По этому такие системы и назывались DOS (Disk Operation System)</p>
+<p>Эти системы использовались на огромных древних компьютерах размером с комнату и вполне себе выполняли свои задачи.</p>
+<p>После этого люди додумались сделать первые многопользовательские системы и системы с разделением времяни.
+Такие системы позволяли запускать несколько программ одновременно и работать с несколькими пользователями.</p>
+<p>Человек использовал терминал (устройство с клавиатурой и монитором) который подключался к компьютеру (мейнфрейм)
+и пользователь такого терминала запускал программу которая выполнялась совместно с другими программами других пользователей.</p>
+<p>Одной из таких систем была UNIX.</p>
+<h4 id="_3">Персональный компьютер</h4>
+<p>Для того чтобы поработать с компьютером в 1970-м вам нужно было придти на работу/универ и работать с ним через терминал.
+Согласитесь это не очень удобно, так - ведь?
+Купить свой компьютер вы не могли так как он стоил заоблачных денег и занимал пару комнат.</p>
+<p>Однако в это время различные умельцы а позже и компании начали выпускать персональные компьютеры для нужд бизнеса и 
+пользователей. Все компьютеры создавались в ручную от сборки компонентов до программ. 
+Программа которая была создана для одного компьютера не подходила для других.
+Сам компьютер и программы для него создавались одним человеком или фирмой и были как одно целое и если вам нужно было
+что-то поменять то вам необходимо было снова и снова обращаться к создателям.</p>
+<p>В те времена возникли фирмы microsoft apple и движение gnu.</p>
+<p>Первые собирали компьютеры в гаражах или писали программы для тех что уже есть. Движение gnu было за что чтобы
+все программы были открытыми, распространялись бесплатно, а оплата была только за обслуживание.</p>
+<p>microsoft выпускали программы для нужд бизнеса, apple стремились создать идеальный компьютер вместе с идеальными программами
+а ребята из gnu проводили сборки где помогали собирать компьютеры и делились программами.</p>
+<p>Это было время таких людей как Билл Гейтс и Пол Ален, Стив Джобс и Стив Возняк, Ричард Столман и Линус Торвальдс.</p>
+<p>Билл Гейтс и Пол Ален создали MS-DOS и Windows, Два Стива создали Macintosh, Линус создал ядро Linux и git, Столман и люди из gnu 
+создали gcc. </p>
+<p>Таким образом еще с тех времен у нас есть три больших лагеря 
+Microsoft которые создают программы для серьзного бизнеса, Apple которые создают дизайнерские решения в мире компьютеров, и 
+OpenSource решения на основе открытых исходных кодов.</p>
+<h4 id="windows-microsoft">Windows и Microsoft</h4>
+<p>Эта самая популярная система уверен у вас она есть, хотя-бы пиратская версия.</p>
+<p>Для работы с Windows вам необходимо его купить, хотя большинство компьютеров идут уже с установленным windows (OEM).
+Большая часть программ платны и покупаются отдельно, да сейчас уже появился магазин Windows но это не совсем то что нужно.</p>
+<p>Когда я еще был студентом я проходил практику в компании которая разрабатывала программы для Windows.<br />
+У них была полка с софтом который по грубой оценке стоил более полмиллиона долларов для нужд компании.</p>
+<p>Этот сегмент достаточно выгодный если вы сможете найти то что нужно людям и компаниям, а так-же разобраться с патентами.</p>
+<p>Программы для Windows это монолитные приложения которые либо построены на .NET Framework либо как монолитные решения.
+Каждая программа включает все необходимые компоненты в себе самой и если что-то ломается то лучший выбор это переустановть её. </p>
+<h4 id="apple">Apple</h4>
+<p>Данная компания лидер в мобильном сегменте и создатель ухко профессиональных решений для дизайнеров.
+Если у вас MacOS тогда вам доступны достаточно много софта для него и помимо этого довольно большой объем софта для Linux
+так-же можно установить на MacOS. Еще со времен Macintosh apple взяли за основу своей системы POSIX стандарты на которых
+работала Unix а сейчас работаю и различные системы Linux.</p>
+<p>Программы на macOS могут быть как монолитными решениями так и пакетами.</p>
+<h4 id="nix">*.nix</h4>
+<p>Linux - это ядро для работы с системой. Из за небольших требований его можно найти на умных и не очень устройствах, вроде 
+телефонов на Android, холодильниках, навигаторах или регистраторов из китая, контролеров и прочей технике.</p>
+<p>Само ядро открытое - это означает что любой человек может скачать его, изменить под свои нужды и пользоваться.
+Сам по себе linux не особо полезен, для комфортной работы с ним необходимо множество программ и комплект из таких программ
+называется сборкой. Многие компании или люди могут создавать свои сборки для компьютеров, телефонов или серверов.  </p>
+<p>Самыми распространенными на данный момент системами на Linux являются RHEL, Debian, Ubuntu и Android.</p>
+<p>Системы вроде Android, MIUI, FlymeOS, FirefoxOs, ChromeOS, CyanogenMod основаны на ядре Linux но
+оно нужно только для работы с железом и множество его возможностей не используются.</p>
+<p>В Windows10 также можно загрузить специальное ядро Linux для использование его возможностей в Windows.</p>
+<p>Для работе на компьютерах (персональные/сервера/ноутбуки) используются системы вроде 
+<em> Red Hat Enterprise Linux и его вариантов centOS и Fedora
+</em> Debian
+<em> Ubuntu
+</em> Gentoo
+* Arch</p>
+<p>Каждый из этих вариантов является экосистемой со своими особенностями.
+Все программы в *.nix системами являются либо ручными сборками либо пакетами.
+Пакеты для своей работы могут использовать другие пакеты - такой ситуация называется зависимостью.
+Зависимости позволяют разным программам использовать одни и те-же части для своей работы что экономит место.</p>
+<p>Например на моем компьютере библиотека для работы с xml - libxml2 используется сразу
+языком программирования python, языком программирования php, офисным пакетом libreOffice,
+средой GNOME, браузером Opera, серверами Apachee и Nginx + базой данных postgres.</p>
+<p>Если бы я установил бы Apachee, libreOffice, PHP и postgres на windows то в большинстве случаев каждая из программ
+имела бы свою версию этой библиотеки. Если бы в ней была ошибка мне бы пришлось ждать пока не издадут исправленные версии этих
+программ.</p>
+<p>Пакетный менеджер обновит версию этой библиотеки и она будет исправлена во всех программах сразу.
+Такой подход позволяет экономить место и получать вовремя обновления безопасности.</p>
+<p>Если мне нужна программа я запрашиваю её у менеджера пакетов и получаю её.</p>
+<p>В Linux так-же есть еще много интересных моментов и правильных подходов.
+Но чаще всего он используется именно на серверах как достаточно надежная плюс еще и бесплатная система.
+Так как я постоянно работаю с такими серверами - для работы и тестов проектов у меня на компьютере стоит как
+раз один из вариантов Linux - Ubuntu Gnome.</p>
+                
+                  
+                
+              
+              
+                
+              
+            </article>
+          </div>
+        </div>
+      </main>
+      
+        
+<footer class="md-footer">
+  
+    <div class="md-footer-nav">
+      <nav class="md-footer-nav__inner md-grid">
+        
+          <a href="../../hardware/readme/" title="Железо" class="md-flex md-footer-nav__link md-footer-nav__link--prev" rel="prev">
+            <div class="md-flex__cell md-flex__cell--shrink">
+              <i class="md-icon md-icon--arrow-back md-footer-nav__button"></i>
+            </div>
+            <div class="md-flex__cell md-flex__cell--stretch md-footer-nav__title">
+              <span class="md-flex__ellipsis">
+                <span class="md-footer-nav__direction">
+                  Previous
+                </span>
+                Железо
+              </span>
+            </div>
+          </a>
+        
+        
+          <a href="../../network/readme/" title="Сети" class="md-flex md-footer-nav__link md-footer-nav__link--next" rel="next">
+            <div class="md-flex__cell md-flex__cell--stretch md-footer-nav__title">
+              <span class="md-flex__ellipsis">
+                <span class="md-footer-nav__direction">
+                  Next
+                </span>
+                Сети
+              </span>
+            </div>
+            <div class="md-flex__cell md-flex__cell--shrink">
+              <i class="md-icon md-icon--arrow-forward md-footer-nav__button"></i>
+            </div>
+          </a>
+        
+      </nav>
+    </div>
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-footer-copyright">
+        
+        powered by
+        <a href="http://www.mkdocs.org" title="MkDocs">MkDocs</a>
+        and
+        <a href="http://squidfunk.github.io/mkdocs-material/" title="Material for MkDocs">
+          Material for MkDocs</a>
+      </div>
+      
+        
+      
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    
+      <script src="../../../assets/javascripts/application-3964c0cb56.js"></script>
+      <script>app.initialize({url:{base:"../../.."}})</script>
+      
+    
+    
+      
+    
+  </body>
+</html>

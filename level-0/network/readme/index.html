@@ -1,0 +1,840 @@
+
+<!DOCTYPE html>
+<html class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      
+        <meta name="description" content="Как научиться создавать сайты с нуля шаг за шагом">
+      
+      
+        <link rel="canonical" href="https://apuf.github.io/aupapp/level-0/network/readme/">
+      
+      
+        <meta name="author" content="Denis Kainazarov">
+      
+      
+        <link rel="shortcut icon" href="../../../assets/images/favicon.png">
+      
+      <meta name="generator" content="mkdocs-0.16.1, mkdocs-material-1.4.1">
+    
+    
+      
+        <title>Сети - AUPAP Еще одно бесполезное php приложение</title>
+      
+    
+    
+      <script src="../../../assets/javascripts/modernizr-56ade86843.js"></script>
+    
+    
+      <link rel="stylesheet" href="../../../assets/stylesheets/application-76741b64bc.css">
+      
+    
+    
+      
+        
+        
+        
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,400,400i,700|Roboto+Mono">
+        <style>body,input{font-family:"Roboto","Helvetica Neue",Helvetica,Arial,sans-serif}code,kbd,pre{font-family:"Roboto Mono","Courier New",Courier,monospace}</style>
+      
+      <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+    
+    
+    
+  </head>
+  
+  
+  
+  
+    <body>
+  
+    <svg class="md-svg">
+      <defs>
+        
+        
+          <svg xmlns="http://www.w3.org/2000/svg" width="416" height="448" viewBox="0 0 416 448" id="github"><path fill="currentColor" d="M160 304q0 10-3.125 20.5t-10.75 19T128 352t-18.125-8.5-10.75-19T96 304t3.125-20.5 10.75-19T128 256t18.125 8.5 10.75 19T160 304zm160 0q0 10-3.125 20.5t-10.75 19T288 352t-18.125-8.5-10.75-19T256 304t3.125-20.5 10.75-19T288 256t18.125 8.5 10.75 19T320 304zm40 0q0-30-17.25-51T296 232q-10.25 0-48.75 5.25Q229.5 240 208 240t-39.25-2.75Q130.75 232 120 232q-29.5 0-46.75 21T56 304q0 22 8 38.375t20.25 25.75 30.5 15 35 7.375 37.25 1.75h42q20.5 0 37.25-1.75t35-7.375 30.5-15 20.25-25.75T360 304zm56-44q0 51.75-15.25 82.75-9.5 19.25-26.375 33.25t-35.25 21.5-42.5 11.875-42.875 5.5T212 416q-19.5 0-35.5-.75t-36.875-3.125-38.125-7.5-34.25-12.875T37 371.5t-21.5-28.75Q0 312 0 260q0-59.25 34-99-6.75-20.5-6.75-42.5 0-29 12.75-54.5 27 0 47.5 9.875t47.25 30.875Q171.5 96 212 96q37 0 70 8 26.25-20.5 46.75-30.25T376 64q12.75 25.5 12.75 54.5 0 21.75-6.75 42 34 40 34 99.5z"/></svg>
+        
+      </defs>
+    </svg>
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="drawer">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="search">
+    <label class="md-overlay" data-md-component="overlay" for="drawer"></label>
+    
+      <header class="md-header" data-md-component="header">
+  <nav class="md-header-nav md-grid">
+    <div class="md-flex">
+      <div class="md-flex__cell md-flex__cell--shrink">
+        
+          <a href="../../.." title="AUPAP Еще одно бесполезное php приложение" class="md-icon md-icon--home md-header-nav__button">
+          </a>
+        
+      </div>
+      <div class="md-flex__cell md-flex__cell--shrink">
+        <label class="md-icon md-icon--menu md-header-nav__button" for="drawer"></label>
+      </div>
+      <div class="md-flex__cell md-flex__cell--stretch">
+        <span class="md-flex__ellipsis md-header-nav__title">
+          
+            
+              
+                <span class="md-header-nav__parent">
+                  level-0
+                </span>
+              
+            
+            Сети
+          
+        </span>
+      </div>
+      <div class="md-flex__cell md-flex__cell--shrink">
+        
+          <label class="md-icon md-icon--search md-header-nav__button" for="search"></label>
+          
+<div class="md-search" data-md-component="search">
+  <div class="md-search__overlay"></div>
+  <div class="md-search__inner">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" name="query" placeholder="Search" accesskey="s" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="query">
+      <label class="md-icon md-search__icon" for="search"></label>
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="result">
+          <div class="md-search-result__meta" data-md-lang-result-none="No matching documents" data-md-lang-result-one="1 matching document" data-md-lang-result-other="# matching documents">
+            Type to start searching
+          </div>
+          <ol class="md-search-result__list"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+        
+      </div>
+      <div class="md-flex__cell md-flex__cell--shrink">
+        <div class="md-header-nav__source">
+          
+            
+
+
+  
+
+
+  <a href="https://github.com/apuf/aupapp" title="Go to repository" class="md-source" data-md-source="github">
+    
+      <div class="md-source__icon">
+        <svg viewBox="0 0 24 24" width="24" height="24">
+          <use xlink:href="#github" width="24" height="24"></use>
+        </svg>
+      </div>
+    
+    <div class="md-source__repository">
+      GitHub
+    </div>
+  </a>
+
+          
+        </div>
+      </div>
+    </div>
+  </nav>
+</header>
+    
+    <div class="md-container">
+      
+      
+      <main class="md-main">
+        <div class="md-main__inner md-grid" data-md-component="container">
+          
+            
+              <div class="md-sidebar md-sidebar--primary" data-md-component="navigation">
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    <nav class="md-nav md-nav--primary" data-md-level="0">
+  <label class="md-nav__title md-nav__title--site" for="drawer">
+    
+      <i class="md-icon md-icon--home md-nav__button"></i>
+    
+    AUPAP Еще одно бесполезное php приложение
+  </label>
+  
+    <div class="md-nav__source">
+      
+
+
+  
+
+
+  <a href="https://github.com/apuf/aupapp" title="Go to repository" class="md-source" data-md-source="github">
+    
+      <div class="md-source__icon">
+        <svg viewBox="0 0 24 24" width="24" height="24">
+          <use xlink:href="#github" width="24" height="24"></use>
+        </svg>
+      </div>
+    
+    <div class="md-source__repository">
+      GitHub
+    </div>
+  </a>
+
+    </div>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+      
+
+
+  <li class="md-nav__item">
+    <a href="../../.." title="Home" class="md-nav__link">
+      Home
+    </a>
+  </li>
+
+    
+      
+      
+      
+
+
+  <li class="md-nav__item">
+    <a href="../../../readme/" title="Оглавление" class="md-nav__link">
+      Оглавление
+    </a>
+  </li>
+
+    
+      
+      
+      
+
+  
+
+
+  <li class="md-nav__item md-nav__item--active md-nav__item--nested">
+    
+      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-3" type="checkbox" id="nav-3" checked>
+    
+    <label class="md-nav__link" for="nav-3">
+      level-0
+    </label>
+    <nav class="md-nav" data-md-component="collapsible" data-md-level="1">
+      <label class="md-nav__title" for="nav-3">
+        level-0
+      </label>
+      <ul class="md-nav__list" data-md-scrollfix>
+        
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../readme/" title="Оглавление" class="md-nav__link">
+      Оглавление
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../hardware/readme/" title="Железо" class="md-nav__link">
+      Железо
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../os/readme/" title="ОС (OS)" class="md-nav__link">
+      ОС (OS)
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+  
+
+
+  <li class="md-nav__item md-nav__item--active">
+    
+    <input class="md-toggle md-nav__toggle" data-md-toggle="toc" type="checkbox" id="toc">
+    
+    
+      <label class="md-nav__link md-nav__link--active" for="toc">
+        Сети
+      </label>
+    
+    <a href="./" title="Сети" class="md-nav__link md-nav__link--active">
+      Сети
+    </a>
+    
+      
+<nav class="md-nav md-nav--secondary">
+  
+  
+  
+    <label class="md-nav__title" for="toc">Table of contents</label>
+    <ul class="md-nav__list" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#_1" title="Начало" class="md-nav__link">
+    Начало
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#tcpip" title="TCP/IP" class="md-nav__link">
+    TCP/IP
+  </a>
+  
+    <nav class="md-nav">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#_2" title="Канальный уровень" class="md-nav__link">
+    Канальный уровень
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_3" title="Сетевой уровень" class="md-nav__link">
+    Сетевой уровень
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_4" title="Транспортный уровень" class="md-nav__link">
+    Транспортный уровень
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_5" title="Прикладной уровень" class="md-nav__link">
+    Прикладной уровень
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#dns" title="DNS" class="md-nav__link">
+    DNS
+  </a>
+  
+    <nav class="md-nav">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#_6" title="Как это работает?" class="md-nav__link">
+    Как это работает?
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#punycode" title="Punycode" class="md-nav__link">
+    Punycode
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#dns_1" title="Настройка DNS" class="md-nav__link">
+    Настройка DNS
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+      
+      
+    </ul>
+  
+</nav>
+    
+  </li>
+
+        
+      </ul>
+    </nav>
+  </li>
+
+    
+      
+      
+      
+
+
+  <li class="md-nav__item md-nav__item--nested">
+    
+      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-4" type="checkbox" id="nav-4">
+    
+    <label class="md-nav__link" for="nav-4">
+      level-1
+    </label>
+    <nav class="md-nav" data-md-component="collapsible" data-md-level="1">
+      <label class="md-nav__title" for="nav-4">
+        level-1
+      </label>
+      <ul class="md-nav__list" data-md-scrollfix>
+        
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../../level-1/readme/" title="Оглавление" class="md-nav__link">
+      Оглавление
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item md-nav__item--nested">
+    
+      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-4-2" type="checkbox" id="nav-4-2">
+    
+    <label class="md-nav__link" for="nav-4-2">
+      HTML
+    </label>
+    <nav class="md-nav" data-md-component="collapsible" data-md-level="2">
+      <label class="md-nav__title" for="nav-4-2">
+        HTML
+      </label>
+      <ul class="md-nav__list" data-md-scrollfix>
+        
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../../level-1/html/readme/" title="Оглавление" class="md-nav__link">
+      Оглавление
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../../level-1/html/text/" title="Разметка текста" class="md-nav__link">
+      Разметка текста
+    </a>
+  </li>
+
+        
+      </ul>
+    </nav>
+  </li>
+
+        
+      </ul>
+    </nav>
+  </li>
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="toc">
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+<nav class="md-nav md-nav--secondary">
+  
+  
+  
+    <label class="md-nav__title" for="toc">Table of contents</label>
+    <ul class="md-nav__list" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#_1" title="Начало" class="md-nav__link">
+    Начало
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#tcpip" title="TCP/IP" class="md-nav__link">
+    TCP/IP
+  </a>
+  
+    <nav class="md-nav">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#_2" title="Канальный уровень" class="md-nav__link">
+    Канальный уровень
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_3" title="Сетевой уровень" class="md-nav__link">
+    Сетевой уровень
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_4" title="Транспортный уровень" class="md-nav__link">
+    Транспортный уровень
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_5" title="Прикладной уровень" class="md-nav__link">
+    Прикладной уровень
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#dns" title="DNS" class="md-nav__link">
+    DNS
+  </a>
+  
+    <nav class="md-nav">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#_6" title="Как это работает?" class="md-nav__link">
+    Как это работает?
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#punycode" title="Punycode" class="md-nav__link">
+    Punycode
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#dns_1" title="Настройка DNS" class="md-nav__link">
+    Настройка DNS
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+      
+      
+    </ul>
+  
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+          
+          <div class="md-content">
+            <article class="md-content__inner md-typeset">
+              
+                
+                  <a href="https://github.com/apuf/aupapp/edit/on-progress/book/level-0/network/readme.md" title="Edit this page" class="md-icon md-content__icon">edit</a>
+                
+                
+                  <h1>Сети</h1>
+                
+                <p>Сеть это группа компьютеров и сетевых устройств соединенных между собой
+Сети бывают локальными LAN и глобальными WAN
+Интернет - это все сети WAN соединенные между собой.</p>
+<h3 id="_1">Начало</h3>
+<p>У нас есть два устройства и нам нужно соединить их между собой для совместной работы
+Предположим это будут 2 ноутбука.</p>
+<p>Самый простой способ это соединить их напрямую с помощью кабеля или wi-fi
+А так-же настроить сеть.
+У каждого устройства в сети есть свой уникальный адрес - MAC адрес, но он может нам сказать только что устройства разные.
+Для обмена данными нам нужно настроить оба компьютера так, чтобы они видели друг друга и могли передавать данные.
+Данные в сети передаются по протоколу чаще всего это InternetProtocol (ipV4 или ipV6), большая часть протоколов
+объединены в стек протоколов TCP/IP. Протоколы это наборы правил по которым строиться сеть и передаются данные.</p>
+<p>В протоколе ipV4 каждому компьютеру выдается адрес из 4 диапазонов цифр от 0 до 255.
+Согласно протоколу для локальных сетей мы можем использовать сети
+192.168.x.x, 10.x.x.x или 172.16.0.0 такие сети называются локальными а адреса неанонсированными или "серыми".
+Так как адресов у нас много но те так чтобы хватило всем эти три группы зарезервированы для локальных сетей.</p>
+<p>Одному компьютеру мы присвоим адрес 192.168.1.2 а второй будет 192.168.1.3. Для Linux этого достаточно для передачи файлов и игр.
+На windows мы еще создадим домашную группу и простая сеть готова!</p>
+<p>Если у нас больше 2-х устройств то нам понадобиться хаб или маршрутизатор (роутер).</p>
+<p>Хаб устаревшее устройство которое грубо говоря посылает любой пришедший к нему сигнал во все стороны а принимающая
+сторона уже определяет ей это было отправлено или нет.</p>
+<p>Маршрутизатор уже более сложное устройство которое содержит в себе свою операционную систему и сервисы для сети.</p>
+<p>Мы берем обычный роутер с wi-fi на борту, но без интернета и соединяемся с ним по логину и паролю.</p>
+<p>Маршрутизатор обычно имеет сервис DHCP (Dynamic Host Configuration Protocol) который еще и выдаст нам ip адрес автоматом.
+Сами маршрутизаторы обычно имеют адрес 192.168.1.1, первый компьютер станет 192.168.1.2 второй 192.168.1.3 и смартфон 192.168.1.4</p>
+<blockquote>
+<p>DHCP это сервис который выдает ip в локальной сети автоматом</p>
+</blockquote>
+<p>Вот у нас уже есть локальная сеть.</p>
+<p>Для соединения с друзьями из другой квартиры мы соединим по wifi или проводу сами маршрутизаторы и создадим мост.
+Где первая квартира 192.168.1.<em> а вторая 192.168.2.</em></p>
+<p>Данные из маршрутизатора 192.168.1.1 попадут в 192.168.1.2 только если 192.168.1.x будет передавать данные 192.168.2.x или наоборот.</p>
+<p>Иными словами маршрутизаторы будут автоматом строить маршруты внутри сети для чего они и созданы.</p>
+<p>Глобальная сеть - это огромное количество маршрутизаторов соединенных между собой.</p>
+<h3 id="tcpip">TCP/IP</h3>
+<p><a href="https://ru.wikipedia.org/wiki/TCP/IP">TCP/IP</a></p>
+<p>Для того чтобы понимать как устроены сети - нужно понять стек протоколов TCP/IP.</p>
+<p>Стек делиться на 4 уровня </p>
+<ul>
+<li>Канальный</li>
+<li>Сетевой</li>
+<li>Транспортный</li>
+<li>Прикладной</li>
+</ul>
+<h4 id="_2">Канальный уровень</h4>
+<p>Канальный уровень отвечает за то каким образом соединены устройства (кабели или радиосвязь), каким образом передаются,
+принимаются шифруются и дешифруются сигналы.</p>
+<p>Канальный уровень это наши провода, оптоволокно или wi-fi и стандарты которые за них отвечают.</p>
+<p>В этом уровне находятся стандарты которые описывают количество жил в кабеле, частоты работы wi-fi и другую
+техническую информацию. Для системных администраторов и создателей оборудования это важная информация но для
+web разработки важано знать только что если не добивает wi-fi или отошел кабель то мы не сможем передать данные.</p>
+<p>Данные на этом уровне - всего лишь набор сигналов</p>
+<h4 id="_3">Сетевой уровень</h4>
+<p>В этом уровне находятся протоколы передачи данных по сети например: </p>
+<ul>
+<li>IP (internet protocol)</li>
+<li>ICMP (Internet Control Message Protocol)</li>
+<li>IGMP (internet Group Management Protocol)</li>
+<li>ARP (Address Resolution Protocol)</li>
+</ul>
+<p>ARP - позволяет нам получить MAC адрес по ip</p>
+<p>ICMP - это служебные сообщения сети, влияют на работу утилит Ping и Traceroute
+Если запретить ICMP на сервере тогда невозможно будет выполнить ping для него
+На основе ICMP можно сделать тоннель передачи данных и передавать данные между 2-я хостами за NAT</p>
+<p>IGMP - управляет широковещательными сообщениями. Такие сообщения доставляются всем компьютерам в сети.</p>
+<p>Когда компьютер подключается к сети он посылает IGMP запрос по всей сети и ближайший DHCP сервер присваивает ему
+уже ip адрес для этой сессии. Я использую это для того чтобы привязывать MAC адреса к ip.
+К примеру в виртуальной сети у меня есть виртуальная машина с postgres базой на борту, я привязываю на DHCP сервере
+её MAC адрес к ip 10.10.5.1 и сервер будет выдавать каждый раз когда я её включаю строго заданный ip адрес для неё.</p>
+<p>IP существует 2-х версий ipv4 и ipv6.</p>
+<p>У ipv4 есть следующие особенности</p>
+<p>Адрес состоит из 4 групп из цифр от 0 до 255.</p>
+<p>Зарезервированные для служебных нужд ip</p>
+<p>10.x.x.x,  172.16.x.x, 192.168.x.x - локальные сети
+127.x.x.x - это ваш компьютер и данные отправленные на 127.x.x.x всегда вернуться обратно.
+0.0.0.0 - как и любой адрес на конце с 0 - широковещательные адреса - при отправке данных на этот адрес
+они уйдут всем устройствам в сети где находиться устройство.</p>
+<p>169.254.0.0 - присваиваются самой системой если адрес не может быть выдан</p>
+<blockquote>
+<p>ipV4 адреса уже почти все выкуплены и вы можете только получить в аренду такой адрес.
+их около 4,22 миллиардов а людей еще больше и каждый имеет по компьютеру, модему и телефону которому нужен адрес</p>
+</blockquote>
+<p>подробнее об ipv4 читайте <a href="https://ru.wikipedia.org/wiki/IPv4">тут</a></p>
+<p>подробнее об ipv6 читайте <a href="https://ru.wikipedia.org/wiki/IPv6">тут</a></p>
+<p>Данные на этом уровне являются обертками над пакетами которые содержат сами пакеты + служебную информацию</p>
+<h4 id="_4">Транспортный уровень</h4>
+<p>Этот уровень отвечает за протоколы передачи данных, используется поверх ip и добавляет новое понятие порт (сокет)</p>
+<blockquote>
+<p>порты дописываются к адресу через двоеточие например 127.0.0.1:80 ipv6 адрес заключается в кавычки [::1]:80</p>
+</blockquote>
+<p>Данные на этом уровне являются пакетами, то есть если вы передаете файл, то он разбивается на много частей
+и отправляется по сети. такие части содержат служебную информацию + данные.</p>
+<p>В этом уровне определены протоколы TCP (transmission control protocol) и UDP (User Datagram Protocol)
+Первый гарантирует доставку пакетов, и если пакет не доставлен до получателя то он будет отправлен снова
+это отлично подходит для передачи важных данных и файлов.</p>
+<p>UDP не гарантирует доставку и хорош для передачи данных которые могут быть потеряны.
+Например потоки видео или аудио в реальном времени.
+Вы не будете ждать пока видео отстанет на несколько кадров при звонке по Skype или слушая онлайн радио.
+Если потери небольшие - то вы скорее всего даже разницы не заметете.</p>
+<p>У нас уже есть адрес ip но как было бы грустно если у нас с интернетом могла работать только одна программа.
+Для этого и были придуманы порты - порт или сокет это некий слот который принимает или отправляет
+пакеты. Это позволяет нам использовать несколько программ которым требуется сеть одновременно.
+в unix и linux подобных системах есть еще и свои unix-сокеты которые используются внутри самой системы
+что позволяет некоторым программам думать что они общаются по сети, хотя по факту данные передаются в самой системе.</p>
+<p>Так как провайдеру интернета или нам самим иногда невыгодно арендовать кучу ip адресов то мы использует NAT
+с помощью портов.</p>
+<p>Технология гениальна - имеется доступный из сети адрес и куча локальных адресов.</p>
+<p>Браузер на порту 192.168.1.2:65535 отправляет запрос на 173.194.122.227:443 порт (https://google.com)
+запрос уходит к провайдеру с ip x.x.x.x провайдер говорит что этот запрос обслуживает порт 65503
+google принимает запрос на свой порт 173.194.122.227:443 и отправляет ответ провайдеру на 
+x.x.x.x:65503 тот перенаправляет ответ на ваш роутер который отправляет вам результат на 
+192.168.1.2:65535. Провайдер теперь может иметь несколько ipv4 на которых могут висеть десятки тысяч
+людей при этом оплачивая копейки за адреса.</p>
+<p>Точно так-же у вас есть облако где есть виртуальные машины, основной сервер получает запрос на порт 
+443 и он отправляет его на балансировщик который выбирает наиболее свободную машину и она быстрее всего
+выдает ответ. Такой подход помогает легко управлять трафиком, держать на одном ip тысячи программ или сайтов.</p>
+<p>Еще трафик за NAT можно еще завернуть в другой NAT и еще в NAT и так достаточно много раз, вот только потери
+расти и расти, а скорость будет падать и падать.</p>
+<p>ipv6 должен решить эту проблему </p>
+<blockquote>
+<p>так как количества его адресов достаточно для того чтобы дать адрес каждому атому 
+на <strong>поверхности</strong> земли и еще останется еще на +100 таких поверхностей.</p>
+</blockquote>
+<p>Порты пока решают проблему с переходом на ipv6 и кучей приложений на одном адресе.</p>
+<p>Множество портов зарезервированы программами
+например 22 это ssh, 80 и 443 это сайта с http и https, список портов и программ на них <a href="https://ru.wikipedia.org/wiki/%D0%A1%D0%BF%D0%B8%D1%81%D0%BE%D0%BA_%D0%BF%D0%BE%D1%80%D1%82%D0%BE%D0%B2_TCP_%D0%B8_UDP">тут</a></p>
+<h4 id="_5">Прикладной уровень</h4>
+<p>Последний уровень который определяется самим приложением в который
+поступили данные, обычно это такие протоколы на HTTP, DHCP, SSH и тд.
+Но вы можете написать свой протокол и использовать на этом уровне, тут уже открывается простор для
+вашей фантазии. Но лучше все-таки взять уже готовый вариант на котором уже множество людей
+работают и поддерживают на достаточно хорошем уровне.</p>
+<h3 id="dns">DNS</h3>
+<p>Каждый раз набирать 173.194.122.227 для того чтобы погуглить не очень хорошая идея а вот ipv6 адрес
+даже безумная. Для того чтобы упростить людям жизнь была придумана DNS (Domain name system)</p>
+<p>которая позволяет преобразовать некую последовательность имен в ip адрес.</p>
+<p>например google.com = 173.194.122.227, 173.194.122.228, 173.194.122.230 ...</p>
+<p>Как работает доменный сервер имен?</p>
+<p>Есть корневые доменные сервера, которые имеют адрес . её вы не указываете, но она есть.
+Эти сервера принадлежат ICANN (Internet Corporation for Assigned Names and Numbers)
+которая управляет системой доменов и ip адресами за компанию.</p>
+<p>Эти сервера знают о основных зонах интернета - доменах первого уровня, например .ru .com и тд.
+С недавнего времени если у вас есть куча серверов по всему миру и куча денег вы можете купить такой
+домен и себе например [https://com.google] или [https://xyz.xyz] или [http://россия.рф] 
+или даже [http://петя.петя]</p>
+<p>Далее сервера которые отвечают за зоны первого уровня могут регистрировать домены второго уровня
+ например habrahabr.ru и это уже и есть наши сайты, владельцы доменов второго уровня могут
+ уже регистрировать на себя домены второго третьего и тд уровня.</p>
+<h4 id="_6">Как это работает?</h4>
+<p>1) вы набираете домен
+2) ваш браузер проверяет есть ли он в кэше, если есть то отдает сразу иначе идем дальше
+3) ваш компьютер ище ближайший DNS сервер (обычно это сервер вашего провайдера) и ищет адрес там, если нет то идем дальше 
+4) сервер провайдера обращается к серверу провайдера покрупнее 
+...
+100500) мы дошли до корневых серверов и мы получим сообщение о том что нет такого сайта</p>
+<p>Вы можете поднять свой DNS сервер в локальной сети или на своем компьютере и сказать
+что обращайся если что к DNS например google 8.8.8.8 и сократить цепочку чтобы сэкономить время</p>
+<p>Такой сервер называется кэширующим DNS. Я завел на нем еще и домен .dev для того чтобы все проекты 
+на моем компьютере имели адрес 127.0.0.1 что прячет их внутри. Так что все мои проекты 
+внутри имя адрес имя-проекта.dev</p>
+<h4 id="punycode">Punycode</h4>
+<p>Домены с названиями отличными от латиницы например петя.петя будут конвертироваться в нее
+по особому формату, например петя.петя = xn--e1atk6c.xn--e1atk6c именно такую ересь передают
+DNS в случае доменов с символами национальных алфавитов в доменах</p>
+<h4 id="dns_1">Настройка DNS</h4>
+<blockquote>
+<p>выходит за пределы данного раздела и возможно даже и книги </p>
+</blockquote>
+                
+                  
+                
+              
+              
+                
+              
+            </article>
+          </div>
+        </div>
+      </main>
+      
+        
+<footer class="md-footer">
+  
+    <div class="md-footer-nav">
+      <nav class="md-footer-nav__inner md-grid">
+        
+          <a href="../../os/readme/" title="ОС (OS)" class="md-flex md-footer-nav__link md-footer-nav__link--prev" rel="prev">
+            <div class="md-flex__cell md-flex__cell--shrink">
+              <i class="md-icon md-icon--arrow-back md-footer-nav__button"></i>
+            </div>
+            <div class="md-flex__cell md-flex__cell--stretch md-footer-nav__title">
+              <span class="md-flex__ellipsis">
+                <span class="md-footer-nav__direction">
+                  Previous
+                </span>
+                ОС (OS)
+              </span>
+            </div>
+          </a>
+        
+        
+          <a href="../../../level-1/readme/" title="Оглавление" class="md-flex md-footer-nav__link md-footer-nav__link--next" rel="next">
+            <div class="md-flex__cell md-flex__cell--stretch md-footer-nav__title">
+              <span class="md-flex__ellipsis">
+                <span class="md-footer-nav__direction">
+                  Next
+                </span>
+                Оглавление
+              </span>
+            </div>
+            <div class="md-flex__cell md-flex__cell--shrink">
+              <i class="md-icon md-icon--arrow-forward md-footer-nav__button"></i>
+            </div>
+          </a>
+        
+      </nav>
+    </div>
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-footer-copyright">
+        
+        powered by
+        <a href="http://www.mkdocs.org" title="MkDocs">MkDocs</a>
+        and
+        <a href="http://squidfunk.github.io/mkdocs-material/" title="Material for MkDocs">
+          Material for MkDocs</a>
+      </div>
+      
+        
+      
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    
+      <script src="../../../assets/javascripts/application-3964c0cb56.js"></script>
+      <script>app.initialize({url:{base:"../../.."}})</script>
+      
+    
+    
+      
+    
+  </body>
+</html>
